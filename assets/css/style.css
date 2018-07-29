@@ -1,27 +1,28 @@
 /* ==== Google font ==== */
-@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700');
 
 /* General Variables */
-/* surreycodes website */
-
 body {
-    text-align: center;
     background: url(../img/surreycodes-self-learning-tech.jpg) no-repeat center center;
     background-attachment: inherit;
-    box-sizing:unset;
     width: 100%;
     height: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Dosis', sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #555;
-    line-height: 2em;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
+}
+h2 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 7vh;
 }
 p {
     margin-bottom: 20px;
@@ -36,14 +37,12 @@ a {
     -o-transition: color 0.1s ease-in, background 0.1s ease-in;
     transition: color 0.1s ease-in, background 0.1s ease-in;
 }
-
 a:hover,
 a:focus {
     color: #006300;
     text-decoration: none;
     outline: 0;
 }
-
 a:before,
 a:after {
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -53,7 +52,35 @@ a:after {
     transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
+/* === Main Section === */
 
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 1em 2em;
+}
+.logo {
+    display: flex;
+    align-self: center;
+    text-align: center;
+    margin-top: 30px;
+    max-height: 100px;
+    max-width: 100px;
+
+}
+.boxing {
+    display: flex;
+    flex-wrap: wrap;
+}
+.boxed {
+    background-color: #2aabd2;
+    border-radius: 25px;
+    height: 10em;
+}
+
+/* BUTTONS */
 
 .btn  {
   color: #fff;
@@ -76,19 +103,9 @@ a:after {
 .button-email:hover {
 	background-color: #47B0FF;opacity: 0.9;
 }
-.boxed {
-    background-color: #2aabd2;
-    border-radius: 25px;
-    height: 20em;
-}
+.social {
 
-.subtitle {
-    font-family: 'Do Hyeon', sans-serif;
-	color: #006300;
-    text-shadow: 1px 2px #FFFFFF;
-	font-size: 8vh;
 }
-
 /* footer */
 footer {
     position: relative;
@@ -100,13 +117,14 @@ footer {
 }
 
 @media only screen 
-and (min-device-width : 320px) {
-
-    h2.subtitle {
-        font-family: 'Do Hyeon', sans-serif;
-        font-weight: lighter;
+and (min-device-width : 380px) {
+    h2 {
         color: #006300;
         text-shadow: 1px 1px #FFFFFF;
-        font-size: 6vh;
+    }
+    .logo {
+        margin-top: 60px;
+        max-height: 200px;
+        max-width: 200px;
     }
 }
