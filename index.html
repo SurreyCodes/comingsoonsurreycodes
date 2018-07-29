@@ -16,13 +16,11 @@
 
     <title>SurreyCodes Foundation | Tech learning community in British Columbia</title>
 
-    <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- font-awesome -->
     <link href="assets/css/font-awesome.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-theme.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/animations.css">
 
-    <!-- siimple style -->
+    <!-- simple style -->
     <link href="assets/css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -32,88 +30,31 @@
     <![endif]-->
 </head>
 <body>
-
-    <div class="cloud floating">
-        <img src="assets/img/cloud.png" alt="Learn React Development">
-    </div>
-
-    <div class="cloud pos1 fliped floating">
-        <img src="assets/img/cloud.png" alt="Donate to a tech non profit">
-    </div>
-
-    <div class="cloud pos2 floating">
-        <img src="assets/img/cloud.png" alt="City of Surrey #Codes">
-    </div>
-
-    <div class="cloud pos3 fliped floating">
-        <img src="assets/img/cloud.png" alt="Learn to build websites">
-    </div>
-
-
-    <div id="wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <img src="assets/img/SurreyCodes.svg" alt="SurreyCodes Foundation Logo" style="max-height: 100px; max-width: 100px;">
-                    <br/>
-                    <br/>
-                    <h2 class="subtitle">Learn to code and help a non-profit with our full-time program.</h2>
-                    <br/>
-                    <form action="https://surreycodes.us15.list-manage.com/subscribe/post?u=e68e8322c02b87c92bb398e16&amp;id=7feaa75c0a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
-                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address as: name@example.com" required>
-                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e68e8322c02b87c92bb398e16_7feaa75c0a" tabindex="-1" value=""></div>
-                            <input type="submit" value="Get Notified!" name="subscribe" id="mc-embedded-subscribe" class="button-email">
-                        </div>
-                    </form>
-                    <br/>
-                </div>
-                <div class="col-sm-12 align-center">
-                    <ul class="social-network social-circle">
-                        <li><a href="https://www.facebook.com/surreycodes/" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="https://twitter.com/surreycodes" target="_blank" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="https://github.com/SurreyCodes" target="_blank" class="icoGit" title="Github"><i class="fa fa-github"></i></a>
-                        </li>
-                        <li><a href="https://ca.linkedin.com/company/surreycodes" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <footer>
-                    <p class="copyright">Copyright &copy; 2018 - <a href="http://surreycodes.com">SurreyCodes Foundation</a>
-                    </p>
-            </footer>
+    <img src="assets/img/SurreyCodes.svg" alt="SurreyCodes Foundation Logo" style="max-height: 100px; max-width: 100px;">
+    <h2 class="subtitle">Learn to code and help a non-profit with our full-time program.</h2>
+        <div class="boxed">
+            <h3 class="align-top">Are you ready to learn to code with others? Fill up your interest to apply today!</h3>
+            <a href="https://goo.gl/forms/oGtJyBWAdyoRNR182" target="_blank"><button class="align-middle" >Learn to Code</button></a>
         </div>
-    </div>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>
-        
-$(document).ready( function () {
-    $('#wrapper').height($(document).height());
-    // I only have one form on the page but you can be more specific if need be.
-    var $form = $('form');
-
-    if ( $form.length > 0 ) {
-        $('form input[type="submit"]').bind('click', function ( event ) {
-            if ( event ) event.preventDefault();
-            // validate_input() is a validation function I wrote, you'll have to substitute this with your own.
-            if ( $form.validate() ) { register($form); }
-        });
-    }
-});
-
-function appendResult(userText , className, iconClass){
-  var resultHTML = "<div class='stretchLeft result "+ className + "'>" + userText + " <span class='fa fa-" + iconClass + "'></span>" + "</div>";
-  $('body').append(resultHTML);
-  $('.result').delay(1000).fadeOut('100');
-}
-    </script>
-
+        <div class="boxed">
+            <h3 class="align-top">Are you a non-profit looking for a website? Submit a project today!</h3>
+            <a href="https://goo.gl/forms/8AG8z1GZs4JV2RQb2" target="_blank"><button class="align-middle" >Submit a Project</button></a>
+        </div>
+        <section class="social">
+            <ul class="social-network social-circle">
+                <li><a href="https://www.facebook.com/surreycodes/" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook fa-2x"></i></a>
+                </li>
+                <li><a href="https://twitter.com/surreycodes" target="_blank" class="icoTwitter" title="Twitter"><i class="fa fa-twitter fa-2x"></i></a>
+                </li>
+                <li><a href="https://github.com/SurreyCodes" target="_blank" class="icoGit" title="Github"><i class="fa fa-github fa-2x"></i></a>
+                </li>
+                <li><a href="https://ca.linkedin.com/company/surreycodes" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin fa-2x"></i></a>
+                </li>
+            </ul>
+        </section>
 </body>
-
+<footer>
+    <p class="copyright">Copyright &copy; 2018 - <a href="http://surreycodes.com">SurreyCodes Foundation</a>
+    </p>
+</footer>
 </html>
