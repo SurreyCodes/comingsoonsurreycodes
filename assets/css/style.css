@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700');
 
 /* General Variables */
+*{
+    padding: 0;
+    margin: 0;
+}
 body {
     background: url(../img/surreycodes-self-learning-tech.jpg) no-repeat center center;
     background-attachment: inherit;
@@ -19,21 +23,25 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 h2 {
+    margin: 0 0 2em 0;
     font-family: 'Dosis', sans-serif;
     font-weight: 700;
     color: #fff;
     font-size: 7vh;
+    text-shadow: 1px 1px #006300;
 }
 p {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
     margin-bottom: 20px;
     font-size: 16px;
+    text-shadow: 1px 1px #006300;
 }
 a {
     color: #FFFFFF;
     word-wrap: break-word;
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
     -o-transition: color 0.1s ease-in, background 0.1s ease-in;
     transition: color 0.1s ease-in, background 0.1s ease-in;
 }
@@ -47,7 +55,6 @@ a:before,
 a:after {
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
     -o-transition: color 0.1s ease-in, background 0.1s ease-in;
     transition: color 0.1s ease-in, background 0.1s ease-in;
 }
@@ -65,7 +72,7 @@ a:after {
     display: flex;
     align-self: center;
     text-align: center;
-    margin-top: 30px;
+    margin: 35px 0;
     max-height: 100px;
     max-width: 100px;
 
@@ -73,39 +80,55 @@ a:after {
 .boxing {
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 .boxed {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 10px;
     background-color: #2aabd2;
     border-radius: 25px;
-    height: 10em;
+    height: 250px;
+    width: 250px;
 }
-
-/* BUTTONS */
-
-.btn  {
-  color: #fff;
-  background-color: #4F92AF;
-  border-color: #4F92AF;
-}
-.btn:hover  {
-  color: #fff;
-  background-color: #444;
-  border-color: #444;
-}
-.button-email {
-	font-weight: 700;
-    border-radius: 15px;
-    height: 40px;
-    border: none;
-    background-color: #006300;opacity: 0.9;
+h3 {
+    font-size: x-large;
+    font-weight: 700;
     color: #FFFFFF;
 }
-.button-email:hover {
-	background-color: #47B0FF;opacity: 0.9;
+/* BUTTONS */
+.main-button{
+    font-family: 'Dosis', sans-serif;
+    border: none;
+    color: Green;
+    padding: 10px 2.3em;
+    text-align: center;
+    border-radius: 12px;
+    font-size: larger;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
 }
-.social {
+.main-button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+.main-button:active {
+    background-color: #4CAF50;
+    box-shadow: 0 3px #006800;
+    transform: translateY(2px);
+}
+/* Social Buttons */
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0 20px;
+    align-content: space-around;
+    justify-content: space-around;
+}
 
-}
 /* footer */
 footer {
     position: relative;
@@ -119,8 +142,7 @@ footer {
 @media only screen 
 and (min-device-width : 380px) {
     h2 {
-        color: #006300;
-        text-shadow: 1px 1px #FFFFFF;
+
     }
     .logo {
         margin-top: 60px;
