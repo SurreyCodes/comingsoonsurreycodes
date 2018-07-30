@@ -30,6 +30,12 @@ h2 {
     font-size: 7vh;
     text-shadow: 1px 1px #006300;
 }
+h3 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 4vh;
+    font-weight: 700;
+    color: #fff;
+}
 p {
     font-family: 'Dosis', sans-serif;
     font-weight: 300;
@@ -81,23 +87,17 @@ a:after {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .boxed {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin: 10px;
-    padding: 10px;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    margin: 1vmax;
+    padding: 10vmax;
     background-color: #2aabd2;
     border-radius: 25px;
-    height: 250px;
-    width: 250px;
-}
-h3 {
-    font-size: x-large;
-    font-weight: 700;
-    color: #FFFFFF;
 }
 /* BUTTONS */
 .main-button{
@@ -107,6 +107,7 @@ h3 {
     padding: 10px 2.3em;
     text-align: center;
     border-radius: 12px;
+    margin: 1em 0;
     font-size: larger;
     -webkit-transition-duration: 0.2s; /* Safari */
     transition-duration: 0.2s;
