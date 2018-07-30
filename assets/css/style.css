@@ -102,13 +102,14 @@ a:after {
 /* BUTTONS */
 .main-button{
     font-family: 'Dosis', sans-serif;
+    font-weight: 700;
     border: none;
     color: Green;
-    padding: 0.8em 2.3em;
+    padding: 0.9em 2.3em;
     text-align: center;
     border-radius: 12px;
-    margin: 3em 0;
-    font-size: 5vmax;
+    margin: 3em 0 0 0;
+    font-size: 22px;
     -webkit-transition-duration: 0.2s; /* Safari */
     transition-duration: 0.2s;
 }
@@ -141,9 +142,9 @@ footer {
 }
 
 @media only screen 
-and (min-device-width : 380px) {
-    h2 {
-
+and (min-device-width : 420px) {
+    .boxing {
+        flex-wrap: nowrap;
     }
     .logo {
         margin-top: 60px;
