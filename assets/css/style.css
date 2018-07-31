@@ -79,8 +79,8 @@ a:after {
     align-self: center;
     text-align: center;
     margin: 35px 0;
-    max-height: 100px;
-    max-width: 100px;
+    max-height: 150px;
+    max-width: 150px;
 
 }
 .boxing {
@@ -143,12 +143,18 @@ footer {
 
 @media only screen 
 and (min-device-width : 420px) {
-    .boxing {
-        flex-wrap: nowrap;
-    }
     .logo {
         margin-top: 60px;
         max-height: 200px;
         max-width: 200px;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .boxing {
+        flex-wrap: nowrap;
+    }
+    .main-button {
+        font-size: 2vmax;
     }
 }
